@@ -1,0 +1,25 @@
+version: '2.4'
+
+services:
+  microg:
+    image: lineageos4microg/docker-lineage-cicd
+    cap_add:
+      - SYS_ADMIN
+    environment:
+      - "BRANCH_NAME=lineage-16.0"
+      - "CCACHE_SIZE=20G"
+      - "DEVICE_LIST=axon7"
+      - "SIGN_BUILDS=true"
+      - "SIGNATURE_SPOOFING=restricted"
+      - "CUSTOM_PACKAGES=GmsCore GsfProxy FakeStore MozillaNlpBackend NominatimNlpBackend com.google.android.maps.jar FDroid FDroidPrivilegedExtension"
+      - "BUILD_OVERLAY=true"
+      #- "OTA_URL=https://api.myserver.com/"
+    volumes:
+      - ./src:/srv/src
+      - ./zips:/srv/zips
+      - ./logs:/srv/logs
+      - ./cache:/srv/ccache
+      - ./tmp:/srv/tmp
+      - ./keys:/srv/keys
+      - ./manifests:/srv/local_manifests:ro
+
