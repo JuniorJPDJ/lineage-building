@@ -7,7 +7,7 @@ services:
       - SYS_ADMIN
     environment:
       - "BRANCH_NAME=lineage-16.0"
-      - "CCACHE_SIZE=20G"
+      - "CCACHE_SIZE=50G"
       - "DEVICE_LIST=axon7"
       - "SIGN_BUILDS=true"
       - "SIGNATURE_SPOOFING=restricted"

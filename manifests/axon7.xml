@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project name="baddar90/android_device_zte_axon7-1" path="device/zte/axon7" revision="lineage-16.0" remote="github"/>
-  <project name="OrdenKrieger/android_kernel_zte_msm8996" path="kernel/zte/msm8996" revision="lineage-16.0" remote="github"/>
+  <project name="baddar90/caf_kernel_zte_msm8996" path="kernel/zte/msm8996" revision="axon7-stable" remote="github"/>
   <project name="baddar90/proprietary_vendor_zte-1" path="vendor/zte" remote="github" revision="lineage-16.0"/>
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-16.0"/>
   <project name="LineageOS/android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="github" revision="lineage-16.0"/>
