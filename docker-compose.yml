@@ -6,10 +6,9 @@ services:
     cap_add:
       - SYS_ADMIN
     environment:
-      - "BRANCH_NAME=lineage-16.0,lineage-17.1"
+      - "BRANCH_NAME=lineage-16.0"
       - "CCACHE_SIZE=50G"
       - "DEVICE_LIST_LINEAGE_16_0=axon7"
-      - "DEVICE_LIST_LINEAGE_17_1=s5neolte"
       - "SIGN_BUILDS=true"
       - "SIGNATURE_SPOOFING=restricted"
       - "CUSTOM_PACKAGES=GmsCore GsfProxy FakeStore MozillaNlpBackend NominatimNlpBackend com.google.android.maps.jar FDroid FDroidPrivilegedExtension"
